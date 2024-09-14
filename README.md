@@ -108,7 +108,7 @@ Schritt 8: Funktionstest.
 
  In den WLAN Einstellungen des Handys/Tablet den ESP wählen und im Browser den WEB-Server mit der IP 192.168.4.1 aufrufen.
 
-<img src="pic/SpeedyAP.pngg"  width="600">
+<img src="pic/SpeedyAP.png"  width="600">
 
 ![Bild](pic/Speedy10.png)
 
