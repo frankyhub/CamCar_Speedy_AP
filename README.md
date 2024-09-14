@@ -97,9 +97,7 @@ Schritt 6: Das Akku-Case und den Motor-Treiber L298N auf die Bodenplatte montier
 ![Bild](pic/Speedy08.png)
 
 
-ESP32-CAM mit der Halterung:
-
-![Bild](pic/Speedy09.jpg)
+ESP32-CAM:
 
 ![Bild](pic/Speedy11.png)
 
