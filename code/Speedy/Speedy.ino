@@ -60,7 +60,7 @@ WebServer server(80);
 
 #define MOTOR_1_PIN_1    14
 #define MOTOR_1_PIN_2    15
-#define MOTOR_2_PIN_1    13 //13
+#define MOTOR_2_PIN_1    13 
 #define MOTOR_2_PIN_2    12
 
 static const char* _STREAM_CONTENT_TYPE = "multipart/x-mixed-replace;boundary=" PART_BOUNDARY;
