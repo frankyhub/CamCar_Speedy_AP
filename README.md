@@ -18,7 +18,9 @@ Access Point (AP), WEB-Server Steuerung mit CAM-Bild
 
 ## Story
 
-Diese Anleitung beschreibt ein Remote Controlled Car Robot mit Handy-Steuerung und Web-Cam. Der Antrieb erfolgt über zwei Getriebe-Motore, als Spannungversorgung dienen zwei Akkus oder optional eine Powerbank bzw. eine 9V-Batterie. Das Herzstrück ist ein ESP32-CAM, die Bodenplatte wird aus einer 4mm Sperrholzplatte gelasert.
+Diese Anleitung beschreibt ein Remote Controlled Car Robot mit Handy-Steuerung und Web-Cam. Der Antrieb erfolgt über zwei Getriebe-Motore, als Spannungversorgung dienen zwei Akkus oder optional eine Powerbank bzw. eine 9V-Batterie. Das Herzstrück ist ein ESP32-CAM, die Bodenplatte wird aus einer 4mm Sperrholzplatte gelasert. Nach anlegen der Versorgungsspannung startet das Programm mit einem Access Point (AP). Der AP wird in den WLAN-Einstellungen des Handy/Tablet aufgerufen und danach mit der IP-Adresse 192.168.4.1 der WEB-Server gestartet. Mit dem WEB-Server steht das Kammerabild und die Motor-Steuer-Buttons zur Verfügung.
+
+![Bild](pic/Speedy0.png)
 
 ## Hardware
 
@@ -90,9 +92,8 @@ L298N Verdahtung:
 
 ![Bild](pic/Speedy07.png)
 
-Schritt 5: Im Programm die Static-IP-Adresse ändern, die WLAN-Daten eintragen und dann das Programm in den ESP32-CAM laden und einen Funktionstest durchführen.
 
-Schritt 6: Das Akku-Case und den Motor-Treiber L298N auf die Bodenplatte montieren. Den ESP32-CAM mit dem Shield auf die Oberseite montieren.
+Schritt 5: Das Akku-Case und den Motor-Treiber L298N auf die Bodenplatte montieren. Den ESP32-CAM mit dem Shield auf die Oberseite montieren.
 
 ![Bild](pic/Speedy08.png)
 
@@ -102,7 +103,9 @@ ESP32-CAM:
 ![Bild](pic/Speedy11.png)
 
 
-Schritt 7: Das vordere Lenkrad montieren und die beiden Räder auf die Getriebemotore stecken.
+Schritt 6: Das vordere Lenkrad montieren und die beiden Räder auf die Getriebemotore stecken.
+
+Schritt 7: Das Programm in den ESP32-CAM laden.
 
 Schritt 8: In den WLAN Einstellungen des Handys/Tablet den ESP wählen und im Browser den WEB-Server mit der IP 192.168.4.1 aufrufen.
 
