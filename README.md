@@ -104,9 +104,7 @@ ESP32-CAM:
 
 Schritt 7: Das vordere Lenkrad montieren und die beiden Räder auf die Getriebemotore stecken.
 
-Schritt 8: Funktionstest.
-
- In den WLAN Einstellungen des Handys/Tablet den ESP wählen und im Browser den WEB-Server mit der IP 192.168.4.1 aufrufen.
+Schritt 8: In den WLAN Einstellungen des Handys/Tablet den ESP wählen und im Browser den WEB-Server mit der IP 192.168.4.1 aufrufen.
 
 <img src="pic/SpeedyAP.png"  width="600">
 
