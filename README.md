@@ -101,6 +101,8 @@ ESP32-CAM mit der Halterung:
 
 ![Bild](pic/Speedy09.jpg)
 
+![Bild](pic/Speedy11.png)
+
 
 Schritt 7: Das vordere Lenkrad montieren und die beiden Räder auf die Getriebemotore stecken.
 
@@ -112,7 +114,7 @@ Schritt 8: Funktionstest.
 
 ![Bild](pic/Speedy10.png)
 
-![Bild](pic/Speedy11.png)
+
 
 <div style="position:absolute; left:2cm; ">   
 <ol class="breadcrumb" style="border-top: 2px solid black;border-bottom:2px solid black; height: 45px; width: 900px;"> <p align="center"><a href="#oben">nach oben</a></p></ol>
