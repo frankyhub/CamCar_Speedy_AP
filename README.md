@@ -1,17 +1,14 @@
 <a name="oben"></a>
 
-# CamCar_Speedy
-Access Point (AP), WEB-Server Steuerung mit CAM-Bild
-
-
 <div align="center">
 
-  |[:skull:ISSUE](https://github.com/frankyhub/CamCar_Speedy_AP/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/CamCar_Speedy_AP/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/CamCar_Speedy_AP/wiki)|
-|--|--|--|
-| | | |
-|![GitHub issues](https://img.shields.io/github/issues/frankyhub/CamCar_Speedy_AP)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/CamCar_Speedy_AP)|![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/CamCar_Speedy_AP)|![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/CamCar_Speedy_AP)|
-|![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/finaldie/skull.svg)[](https://github.com/frankyhub/CamCar_Speedy_AP/pulls)|[<img src="https://img.shields.io/github/license/finaldie/skull.svg">](https://github.com/frankyhub/CamCar_Speedy_AP/blob/main/LICENSE.md)| ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)|
+|[:skull:ISSUE](https://github.com/frankyhub/CamCar_Speedy_AP/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/CamCar_Speedy_AP/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/CamCar_Speedy_AP/wiki)||
+|--|--|--|--|
+| | | | |
+|![Static Badge](https://img.shields.io/badge/RepoNr.:-%2070-blue)|<a href="https://github.com/frankyhub/CamCar_Speedy_AP/issues">![GitHub issues](https://img.shields.io/github/issues/frankyhub/CamCar_Speedy_AP)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/CamCar_Speedy_AP)|<a href="https://github.com/frankyhub/CamCar_Speedy_AP/discussions">![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/CamCar_Speedy_AP)|<a href="https://github.com/frankyhub/CamCar_Speedy_AP/releases">![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/CamCar_Speedy_AP)|
+|![GitHub Created At](https://img.shields.io/github/created-at/frankyhub/CamCar_Speedy_AP)| <a href="https://github.com/frankyhub/CamCar_Speedy_AP/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/CamCar_Speedy_AP/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)|
 </div>
+
 
 
 
@@ -115,9 +112,13 @@ Schritt 8: In den WLAN Einstellungen des Handys/Tablet den ESP wählen und im Br
 
 
 
+---
+
 <div style="position:absolute; left:2cm; ">   
 <ol class="breadcrumb" style="border-top: 2px solid black;border-bottom:2px solid black; height: 45px; width: 900px;"> <p align="center"><a href="#oben">nach oben</a></p></ol>
-</div> 
+</div>  
+
+---
 
 
 
