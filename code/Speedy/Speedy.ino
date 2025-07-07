@@ -1,16 +1,16 @@
 /************************************************************************************************* 
                                       PROGRAMMINFO
 ************************************************************************************************** 
-Funktion: Speedy mit WEB-Server
+Funktion: Speedy mit AP 192.168.4.1 und WEB-Server
 **************************************************************************************************
-Version: 13.09.2024
+Version: 06.07.2025
 **************************************************************************************************
 Board:  AI Thinker ESP32-CAM (ESP32 Wrover Module) Ver.ESPRESSIF 3.0.4
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 **************************************************************************************************
-C++ Arduino IDE V1.8.13
+C++ Arduino IDE V1.8.19
 **************************************************************************************************
 **************************************************************************************************
 Librarys
@@ -223,31 +223,31 @@ static esp_err_t cmd_handler(httpd_req_t *req){
   
   if(!strcmp(variable, "forward")) {
     Serial.println("Vorwärts");
-    digitalWrite(MOTOR_1_PIN_1, 1);
-    digitalWrite(MOTOR_1_PIN_2, 0);
-    digitalWrite(MOTOR_2_PIN_1, 1);
-    digitalWrite(MOTOR_2_PIN_2, 0);
+    digitalWrite(MOTOR_1_PIN_1, 1); //1
+    digitalWrite(MOTOR_1_PIN_2, 0); //0
+    digitalWrite(MOTOR_2_PIN_1, 1); //1
+    digitalWrite(MOTOR_2_PIN_2, 0); //0
   }
   else if(!strcmp(variable, "left")) {
     Serial.println("Links");
     digitalWrite(MOTOR_1_PIN_1, 0);
-    digitalWrite(MOTOR_1_PIN_2, 1);
-    digitalWrite(MOTOR_2_PIN_1, 1);
+    digitalWrite(MOTOR_1_PIN_2, 1); //1
+    digitalWrite(MOTOR_2_PIN_1, 0);
     digitalWrite(MOTOR_2_PIN_2, 0);
   }
   else if(!strcmp(variable, "right")) {
     Serial.println("Rechts");
-    digitalWrite(MOTOR_1_PIN_1, 1);
+    digitalWrite(MOTOR_1_PIN_1, 0); 
     digitalWrite(MOTOR_1_PIN_2, 0);
-    digitalWrite(MOTOR_2_PIN_1, 0);
-    digitalWrite(MOTOR_2_PIN_2, 1);
+    digitalWrite(MOTOR_2_PIN_1, 0);  
+    digitalWrite(MOTOR_2_PIN_2, 1); //1
   }
   else if(!strcmp(variable, "backward")) {
     Serial.println("Rückwärts");
-    digitalWrite(MOTOR_1_PIN_1, 0);
-    digitalWrite(MOTOR_1_PIN_2, 1);
-    digitalWrite(MOTOR_2_PIN_1, 0);
-    digitalWrite(MOTOR_2_PIN_2, 1);
+    digitalWrite(MOTOR_1_PIN_1, 0); //0
+    digitalWrite(MOTOR_1_PIN_2, 1); //1
+    digitalWrite(MOTOR_2_PIN_1, 0); //0
+    digitalWrite(MOTOR_2_PIN_2, 1); //1
   }
   else if(!strcmp(variable, "stop")) {
     Serial.println("Stopp");
@@ -350,27 +350,16 @@ void setup() {
     Serial.printf("Camera init failed with error 0x%x", err);
     return;
   }
- /*
-  // Wi-Fi connection
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.println("WiFi connected");
-  */
-    // ESP access point
-  Serial.print("Setting AP (Access Point)…");
+ 
+  // ESP access point
+  Serial.print("Access Point…");
   WiFi.mode(WIFI_AP);
   WiFi.softAP(ssid, password);
   IPAddress IP = WiFi.softAPIP();
-  Serial.print("AP IP address: ");
+  Serial.print("IP Adresse: ");
   Serial.println(IP);
   
-  Serial.print("Camera Stream Ready! Go to: http://");
-  Serial.println(WiFi.localIP());
-  
+ 
   // Start streaming web server
   startCameraServer();
 }
